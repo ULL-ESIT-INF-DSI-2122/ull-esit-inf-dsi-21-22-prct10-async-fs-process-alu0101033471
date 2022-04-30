@@ -1,0 +1,12 @@
+import { Saber } from './saber';
+import { Crear } from './crear';
+import { List } from './list';
+import { Read } from './read';
+import { Remove } from './remove';
+import { MoveryCopiar } from './movercopiar';
+export declare const saberOpcion: Saber;
+export declare const crearOpcion: Crear;
+export declare const listOpcion: List;
+export declare const readOpcion: Read;
+export declare const modifyOpcion: MoveryCopiar;
+export declare const removeOpcion: Remove;

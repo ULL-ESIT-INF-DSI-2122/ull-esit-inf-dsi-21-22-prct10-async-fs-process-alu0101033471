@@ -1,0 +1,26 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.removeOpcion = exports.modifyOpcion = exports.readOpcion = exports.listOpcion = exports.crearOpcion = exports.saberOpcion = void 0;
+const yargs_1 = __importDefault(require("yargs"));
+const saber_1 = require("./saber");
+const crear_1 = require("./crear");
+const list_1 = require("./list");
+const read_1 = require("./read");
+const remove_1 = require("./remove");
+const movercopiar_1 = require("./movercopiar");
+exports.saberOpcion = new saber_1.Saber();
+exports.crearOpcion = new crear_1.Crear();
+exports.listOpcion = new list_1.List();
+exports.readOpcion = new read_1.Read();
+exports.modifyOpcion = new movercopiar_1.MoveryCopiar();
+exports.removeOpcion = new remove_1.Remove();
+exports.saberOpcion.saberRuta();
+exports.crearOpcion.crearDirectorio();
+exports.listOpcion.listar();
+exports.readOpcion.read();
+exports.modifyOpcion.moverCopiarRuta();
+exports.removeOpcion.remove();
+yargs_1.default.parse();
