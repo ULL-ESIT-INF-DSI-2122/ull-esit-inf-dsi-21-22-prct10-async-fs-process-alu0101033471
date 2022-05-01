@@ -29,9 +29,9 @@ if (process.argv.length !== 3) {
   });
 }
 ```
-Si se realiza una traza del programa, en caso de introducir por linea de comandos un número de argumentos distinto a 3, notifica de un error, en caso contrario la función access, si no encuentra el archivo pasado por argumento, notifica de un error y en caso de si encontrarlo comienza con un mensaje de inicio, se salta el proceso ** watcher.on ** y visualiza el último mensaje del programa. Después, por cada modificación en el fichero introducido por comando, se notificará con un mensaje por consola.
+Si se realiza una traza del programa, en caso de introducir por linea de comandos un número de argumentos distinto a 3, notifica de un error, en caso contrario la función access, si no encuentra el archivo pasado por argumento, notifica de un error y en caso de si encontrarlo comienza con un mensaje de inicio, se salta el proceso **watcher.on** y visualiza el último mensaje del programa. Después, por cada modificación en el fichero introducido por comando, se notificará con un mensaje por consola.
 
-///¿Qué hace la función access? ¿Para qué sirve el objeto constants?
+En cuanto a las preguntas del ejercicio la función **access** comprueba la existencia del archivo pasado por parametro y gracias al objeto **constants**, en este caso nos permite saber si el archivo es visible.
 
 ## Ejercicio 2
 
@@ -169,7 +169,7 @@ Aclarar, que el evento que emite el objeto Watcher cuando se crea un nuevo fiche
 
 Respondiendo a las cuestiones que se hacen en el ejercicio,
 Para mostrar, no solo el nombre, sino también el contenido del fichero, en el caso de que haya sido creado o modificado se haría uso de la función **readFile** pasando como nombre del archivo la variable **filename**.
-Y para que no solo se observase el directorio de un único usuario sino todos los directorios correspondientes a los diferentes usuarios de la aplicación de notas, en la función **watch** se debe realizar sobre el directorio que almacena los directrorios de los usuarios y activar la opción **recursive** que permite observar todos los subdirectorios que por defecto esta a **false**.
+Y para que no solo se observase el directorio de un único usuario sino todos los directorios correspondientes a los diferentes usuarios de la aplicación de notas, en la función **watch** se debe realizar sobre el directorio que almacena los directorios de los usuarios y activar la opción **recursive** que permite observar todos los subdirectorios que por defecto esta a **false**.
 
 ## Ejercicio 4
 
